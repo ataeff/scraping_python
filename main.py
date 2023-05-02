@@ -105,6 +105,7 @@ def theresAnAiForThat_parse():
     return out
 
 
+
 def save_to_csv():
     with open('scraping.csv', 'w', encoding='utf-8', newline='') as file:
         field_names = ['NAME', 'LINK']
@@ -112,6 +113,7 @@ def save_to_csv():
         writer.writeheader()
         for name, values in out.items():
             writer.writerow(dict(NAME=name, LINK=values))
+
 
 
 
